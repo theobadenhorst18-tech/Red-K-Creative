@@ -25,7 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:root { --ink:#0d1114; --paper:#f2efe8; --red:#ed1717; --line:rgba(13,17,20,.22); }
+:root { --ink:#f5f2eb; --paper:#050505; --red:#ed1717; --line:rgba(255,255,255,.22); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
@@ -36,7 +36,7 @@ a { color:inherit; text-decoration:none; }
 .brandDot { width:42px; height:42px; border-radius:50%; background:var(--red); color:white; display:grid; place-items:center; font-size:13px; letter-spacing:-.08em; }
 nav { display:flex; align-items:center; gap:32px; font-size:14px; font-weight:700; }
 nav a { transition:opacity .2s ease; } nav a:hover { opacity:.55; }
-.navCta { background:var(--ink); color:white; padding:14px 18px; display:flex; gap:20px; }
+.navCta { background:var(--red); color:white; padding:14px 18px; display:flex; gap:20px; }
 .hero { min-height:760px; position:relative; padding:85px 0 50px; overflow:hidden; border-bottom:1px solid var(--line); }
 .eyebrow,.sectionLabel { text-transform:uppercase; letter-spacing:.16em; font-size:11px; font-weight:800; }
 .hero h1 { margin:28px 0 0; max-width:1050px; font-size:clamp(78px,12vw,180px); line-height:.78; letter-spacing:-.075em; font-weight:900; text-transform:uppercase; }
@@ -44,7 +44,7 @@ nav a { transition:opacity .2s ease; } nav a:hover { opacity:.55; }
 .heroBottom { position:absolute; bottom:55px; left:0; right:0; display:flex; justify-content:space-between; align-items:end; }
 .heroBottom p { width:min(440px,80%); font-size:21px; line-height:1.4; margin:0; }
 .roundLink { width:64px; height:64px; border:1px solid var(--ink); border-radius:50%; display:grid; place-items:center; font-size:26px; transition:.2s; }
-.roundLink:hover { background:var(--ink); color:white; }
+.roundLink:hover { background:var(--ink); color:var(--paper); }
 .heroStamp { position:absolute; right:8%; top:22%; width:clamp(150px,18vw,260px); aspect-ratio:1; border-radius:50%; background:var(--red); color:white; transform:rotate(8deg); display:flex; flex-direction:column; justify-content:center; align-items:center; font-weight:900; line-height:.75; box-shadow:0 20px 60px rgba(237,23,23,.24); }
 .heroStamp span { font-size:clamp(48px,6vw,86px); letter-spacing:-.1em; }
 .heroStamp small { margin-top:16px; letter-spacing:.42em; font-size:10px; }
@@ -60,7 +60,7 @@ nav a { transition:opacity .2s ease; } nav a:hover { opacity:.55; }
 .projectGrid { display:grid; grid-template-columns:1.15fr .85fr; gap:16px; }
 .project { min-height:520px; padding:26px; position:relative; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; }
 .project:first-child { grid-row:span 2; min-height:760px; }
-.projectRed { background:var(--red); color:white; } .projectCream { background:#dad3c5; } .projectDark { background:var(--ink); color:white; }
+.projectRed { background:var(--red); color:white; } .projectCream { background:#1b1b1b; } .projectDark { background:#101010; color:white; }
 .projectNumber { font-size:11px; letter-spacing:.18em; }
 .projectGraphic { position:absolute; inset:12% 7%; display:flex; align-items:center; justify-content:center; font-size:clamp(130px,20vw,340px); font-weight:900; line-height:.7; letter-spacing:-.18em; opacity:.95; }
 .projectCream .projectGraphic { color:var(--red); transform:rotate(-7deg); }
