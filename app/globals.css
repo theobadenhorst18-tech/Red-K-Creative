@@ -57,6 +57,8 @@ nav a:hover { opacity:.55; }
 .contact h2 em { color:var(--ink); }
 .contactRow { border-top:1px solid rgba(255,255,255,.45); display:flex; justify-content:space-between; padding-top:25px; font-size:18px; font-weight:700; }
 .contactRow a { display:flex; gap:24px; }
+.contactRow .contactButton { width:max-content; background:var(--ink); color:var(--paper); padding:16px 20px; clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px); transition:transform .2s ease; }
+.contactRow .contactButton:hover { transform:translateY(-3px); }
 footer { min-height:110px; display:flex; justify-content:space-between; align-items:center; font-size:11px; text-transform:uppercase; letter-spacing:.12em; }
 @media (max-width:760px) {
   .shell { width:min(100% - 28px,1360px); } .nav { min-height:76px; } nav>a:not(.navCta) { display:none; } .navCta { padding:11px 13px; }
