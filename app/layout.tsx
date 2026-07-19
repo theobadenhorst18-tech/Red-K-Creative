@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Red K Creative | Design, Illustration & Murals",
