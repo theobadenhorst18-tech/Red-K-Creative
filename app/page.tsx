@@ -15,7 +15,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="signal signalOne" aria-hidden="true" />
         <div className="signal signalTwo" aria-hidden="true" />
-        <p className="eyebrow">Independent creative studio · Johannesburg</p>
+        <p className="eyebrow">Independent creative studio · Nelspruit</p>
         <p className="heroLead">We don’t add noise —</p>
         <h1>we <strong>refine.</strong></h1>
         <div className="heroBottom"><p>Clear thinking. Bold execution. Graphic design, illustration, paint and public art with purpose.</p><a className="roundLink" href="#work" aria-label="Explore our work">↓</a></div>
