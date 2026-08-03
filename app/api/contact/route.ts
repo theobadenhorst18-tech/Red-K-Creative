@@ -60,7 +60,7 @@ function buildEmailHtml(payload: Required<Omit<ContactPayload, "company">>) {
 
 export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.CONTACT_EMAIL_FROM || "Red K Creative <hello@redkcreative.co.za>";
+  const from = process.env.CONTACT_EMAIL_FROM || "Red K Creative <admin@compassmedia.co.za>";
 
   if (!apiKey) {
     return NextResponse.json(
