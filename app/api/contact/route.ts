@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const resendEndpoint = "https://api.resend.com/emails";
 const recipient = "redkcreative@gmail.com";
-const sender = "admin@compassmedia.co.za";
+const sender = "admin@compassmediasa.co.za";
 
 type ContactPayload = {
   name?: string;
