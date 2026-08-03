@@ -8,7 +8,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a><a href="#services">Services</a>
-          <a className="navCta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+          <a className="navCta" href="/contact">Start a project <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact shell" id="contact"><p className="sectionLabel">Have a project in mind?</p><h2>Let’s make<br /><em>something loud.</em></h2><div className="contactRow"><a className="contactButton" href="mailto:hello@redkcreative.co.za">Contact us <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/redkcreative/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a></div></section>
+      <section className="contact shell" id="contact"><p className="sectionLabel">Have a project in mind?</p><h2>Let’s make<br /><em>something loud.</em></h2><div className="contactRow"><a className="contactButton" href="/contact">Contact us <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/redkcreative/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a></div></section>
       <footer className="shell"><p>© {new Date().getFullYear()} Red K Creative</p><p>Design · Paint · Illustration</p></footer>
     </main>
   );
