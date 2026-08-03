@@ -71,14 +71,6 @@ export default function ContactForm() {
             <option>Other</option>
           </select>
         </label>
-        <label>
-          <span>Budget range</span>
-          <input name="budget" />
-        </label>
-        <label>
-          <span>Timeline</span>
-          <input name="timeline" />
-        </label>
       </div>
       <label>
         <span>Project details</span>

@@ -9,8 +9,6 @@ type ContactPayload = {
   email?: string;
   phone?: string;
   projectType?: string;
-  budget?: string;
-  timeline?: string;
   message?: string;
   company?: string;
 };
@@ -34,8 +32,6 @@ function buildEmailHtml(payload: Required<Omit<ContactPayload, "company">>) {
     ["Email", payload.email],
     ["Phone", payload.phone || "Not provided"],
     ["Project type", payload.projectType || "Not specified"],
-    ["Budget", payload.budget || "Not specified"],
-    ["Timeline", payload.timeline || "Not specified"],
   ];
 
   return `
@@ -86,8 +82,6 @@ export async function POST(request: Request) {
     email: clean(payload.email),
     phone: clean(payload.phone),
     projectType: clean(payload.projectType),
-    budget: clean(payload.budget),
-    timeline: clean(payload.timeline),
     message: clean(payload.message),
   };
 

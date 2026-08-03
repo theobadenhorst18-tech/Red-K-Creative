@@ -37,8 +37,8 @@ export default function ContactPage() {
           <ContactForm />
           <aside className="contactAside">
             <p className="contactKicker">Direct email</p>
-            <a className="contactEmail" href="mailto:hello@redkcreative.co.za">
-              hello@redkcreative.co.za
+            <a className="contactEmail" href="mailto:redkcreative@gmail.com">
+              redkcreative@gmail.com
             </a>
             <div className="contactNotes">
               <p>Brand identities</p>
