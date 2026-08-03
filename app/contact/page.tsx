@@ -17,7 +17,7 @@ export default function ContactPage() {
         <nav aria-label="Main navigation">
           <a href="/#work">Work</a>
           <a href="/#services">Services</a>
-          <a className="navCta" href="mailto:hello@redkcreative.co.za">
+          <a className="navCta" href="mailto:redkcreative@gmail.com">
             Email us <span aria-hidden="true">↗</span>
           </a>
         </nav>

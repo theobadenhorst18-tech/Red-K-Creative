@@ -112,7 +112,7 @@ export async function POST(request: Request) {
     });
   } catch {
     return NextResponse.json(
-      { error: "Could not send your message. Please email hello@redkcreative.co.za." },
+      { error: "Could not send your message. Please email redkcreative@gmail.com." },
       { status: 502 }
     );
   }
