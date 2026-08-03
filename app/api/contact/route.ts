@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
+const resendEndpoint = "https://api.resend.com/emails";
 const recipient = "redkcreative@gmail.com";
 const sender = "admin@compassmedia.co.za";
 
@@ -56,9 +56,9 @@ function buildEmailHtml(payload: Required<Omit<ContactPayload, "company">>) {
 }
 
 export async function POST(request: Request) {
-  const appPassword = process.env.GMAIL_APP_PASSWORD;
+  const apiKey = process.env.RESEND_API_KEY;
 
-  if (!appPassword) {
+  if (!apiKey) {
     return NextResponse.json(
       { error: "Contact form is not configured yet." },
       { status: 500 }
@@ -92,25 +92,22 @@ export async function POST(request: Request) {
     );
   }
 
-  const transport = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: sender,
-      pass: appPassword,
+  const response = await fetch(resendEndpoint, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
     },
-  });
-
-  try {
-    await transport.sendMail({
+    body: JSON.stringify({
       from: `Red K Creative <${sender}>`,
-      to: recipient,
-      replyTo: contact.email,
+      to: [recipient],
+      reply_to: contact.email,
       subject: `New enquiry from ${contact.name}`,
       html: buildEmailHtml(contact),
-    });
-  } catch {
+    }),
+  });
+
+  if (!response.ok) {
     return NextResponse.json(
       { error: "Could not send your message. Please email redkcreative@gmail.com." },
       { status: 502 }
