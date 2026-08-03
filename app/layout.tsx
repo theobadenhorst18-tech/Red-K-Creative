@@ -16,8 +16,9 @@ export const metadata: Metadata = {
     images: [{ url: "/redk-logo.png", alt: "Red K Creative" }],
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
-    shortcut: "/favicon.svg",
+    icon: [{ url: "/redk-logo.png", type: "image/png" }],
+    shortcut: "/redk-logo.png",
+    apple: "/redk-logo.png",
   },
 };
 
